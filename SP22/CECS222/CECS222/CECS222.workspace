@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="CECS222" Database="" Version="10000">
+  <Project Name="ClassEmployee" Path="../memoriaDinimica/ClassEmployee/ClassEmployee.project" Active="Yes"/>
+  <Project Name="points" Path="points/points.project"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="ClassEmployee" ConfigName="Debug"/>
+      <Project Name="points" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="ClassEmployee" ConfigName="Release"/>
+      <Project Name="points" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
