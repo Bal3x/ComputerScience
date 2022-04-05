@@ -1,0 +1,4 @@
+﻿  NumArray.cpp
+C:\Users\bchav\OneDrive\Desktop\ComputerScience\ComputerScience\SP22\CECS222\Activities_SP22\NumberArrayClass\NumberArrayClass\NumArray.cpp(62,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\bchav\OneDrive\Desktop\ComputerScience\ComputerScience\SP22\CECS222\Activities_SP22\NumberArrayClass\NumberArrayClass\NumArray.cpp(64,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  NumberArrayClass.vcxproj -> C:\Users\bchav\OneDrive\Desktop\ComputerScience\ComputerScience\SP22\CECS222\Activities_SP22\NumberArrayClass\x64\Debug\NumberArrayClass.exe

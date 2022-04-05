@@ -1,0 +1,4 @@
+﻿  SwimmingPool.cpp
+C:\Users\bchav\OneDrive\Desktop\ComputerScience\ComputerScience\SP22\CECS222\Activities_SP22\SwimmingPool\SwimmingPool\SwimmingPool.cpp(82,52): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\bchav\OneDrive\Desktop\ComputerScience\ComputerScience\SP22\CECS222\Activities_SP22\SwimmingPool\SwimmingPool\SwimmingPool.cpp(95,72): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  SwimmingPool.vcxproj -> C:\Users\bchav\OneDrive\Desktop\ComputerScience\ComputerScience\SP22\CECS222\Activities_SP22\SwimmingPool\x64\Debug\SwimmingPool.exe
