@@ -1,0 +1,132 @@
+#include<iostream>
+
+using namespace::std;
+
+#include "SafestRegion.h"
+
+void getValues(SafestRegion *myRegions, int size);
+
+void findLowest(SafestRegion *myRegions, int size, int &index);
+
+int main(){
+
+
+	SafestRegion *myRegions = nullptr;
+
+	int index;
+
+
+	myRegions = new SafestRegion[5];
+
+	getValues(myRegions, 5);
+
+	findLowest(myRegions, 5, index);
+
+	cout << "La region " << myRegions[index].getRegionName() << " con menor accidentes es : " << myRegions[index].getNumOfAccidents() << endl;
+
+	delete[] 	myRegions;
+
+	myRegions = nullptr;
+
+	system("pause");
+
+
+}//end main
+
+
+void getValues(SafestRegion *myRegions, int size){
+
+
+}
+
+void findLowest(SafestRegion *myRegions, int size, int &index){
+
+
+	int count;
+
+	int lowest;
+
+	lowest = myRegions[0].getNumOfAccidents();
+
+	for (count = 1; count < size; count++)
+
+	{
+
+		if (myRegions[count] < lowest){
+
+			lowest = myRegions[count].getNumOfAccidents();
+
+			index = count;
+
+		}
+
+	}
+
+}
+
+
+
+#ifndef SAFEST_REGION_H
+
+#define SAFEST_REGION_H
+
+class SafestRegion{
+
+
+private : 
+
+	char *regionName;
+
+	int numOfAccidents;
+
+public:
+
+	SafestRegion();
+
+	SafestRegion(char *aRegionName, int aNumOfAcciden);
+
+	SafestRegion(const SafestRegion &obj);
+
+	~SafestRegion();
+
+	void setRegionName(char *aRegionName);
+
+	void setNumOfAccidents(int aNumOfAcciden);
+
+	char *getRegionName() const;
+
+	int getNumOfAccidents() const;
+
+	void display() const;
+
+
+};
+
+#endif
+
+
+
+#include<iostream>
+
+using namespace::std;
+
+#include "SafestRegion.h"
+
+
+SafestRegion::SafestRegion(){}
+
+SafestRegion::SafestRegion(char *aRegionName, int aNumOfAcciden){}
+
+SafestRegion::SafestRegion(const SafestRegion &obj){}
+
+SafestRegion::~SafestRegion(){}
+
+void SafestRegion::setRegionName(char *aRegionName){}
+
+void SafestRegion::setNumOfAccidents(int aNumOfAcciden){}
+
+char *SafestRegion::getRegionName() const{}
+
+int SafestRegion::getNumOfAccidents() const{}
+
+void SafestRegion::display() const{}

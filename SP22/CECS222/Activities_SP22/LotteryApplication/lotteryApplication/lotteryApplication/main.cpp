@@ -5,13 +5,14 @@
 using namespace::std;
 
 int main() {
-	int aSize = 5;
+	const int aSize = 5;
 
-	Lottery todaysNumbers(aSize);
+	Lottery myNumbers(aSize);
 
-	todaysNumbers.displayUserArray();
-	todaysNumbers.displayRandomArray();
-	todaysNumbers.compareNumbers();
+	myNumbers.displayRandomArray();
+	myNumbers.displayUserArray();
+	myNumbers.compareArrays();
+	cout << endl;
 
 	return 0;
 }
