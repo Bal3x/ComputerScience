@@ -3,17 +3,17 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=ClassEmployee
+ProjectName            :=StudentScores
 ConfigurationName      :=Debug
 WorkspacePath          :=/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222
-ProjectPath            :=/home/bal3x/clases/ComputerScience/SP22/CECS222/memoriaDinimica/ClassEmployee
+ProjectPath            :=/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/StudentScores
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Bal3x
-Date                   :=26/03/22
+Date                   :=18/04/22
 CodeLitePath           :=/home/bal3x/.codelite
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -32,7 +32,7 @@ Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
-ObjectsFileList        :="ClassEmployee.txt"
+ObjectsFileList        :="StudentScores.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=mkdir -p
 LinkOptions            :=  -static
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Employee.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/StudentScores.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
 
@@ -91,17 +91,17 @@ PreBuild:
 ##
 ## Objects
 ##
+$(IntermediateDirectory)/StudentScores.cpp$(ObjectSuffix): StudentScores.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/StudentScores.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/StudentScores.cpp$(DependSuffix) -MM StudentScores.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/StudentScores/StudentScores.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/StudentScores.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/StudentScores.cpp$(PreprocessSuffix): StudentScores.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/StudentScores.cpp$(PreprocessSuffix) StudentScores.cpp
+
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/ComputerScience/SP22/CECS222/memoriaDinimica/ClassEmployee/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/StudentScores/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
-
-$(IntermediateDirectory)/Employee.cpp$(ObjectSuffix): Employee.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Employee.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Employee.cpp$(DependSuffix) -MM Employee.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/ComputerScience/SP22/CECS222/memoriaDinimica/ClassEmployee/Employee.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Employee.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Employee.cpp$(PreprocessSuffix): Employee.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Employee.cpp$(PreprocessSuffix) Employee.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

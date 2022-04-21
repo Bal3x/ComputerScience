@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ ClassEmployee - Debug ]----------"
-	@cd "/home/bal3x/clases/ComputerScience/SP22/CECS222/memoriaDinimica/ClassEmployee" && "$(MAKE)" -f  "ClassEmployee.mk"
+	@echo "----------Building project:[ Rectangle1 - Debug ]----------"
+	@cd "Rectangle1" && "$(MAKE)" -f  "Rectangle1.mk"
 clean:
-	@echo "----------Cleaning project:[ ClassEmployee - Debug ]----------"
-	@cd "/home/bal3x/clases/ComputerScience/SP22/CECS222/memoriaDinimica/ClassEmployee" && "$(MAKE)" -f  "ClassEmployee.mk" clean
+	@echo "----------Cleaning project:[ Rectangle1 - Debug ]----------"
+	@cd "Rectangle1" && "$(MAKE)" -f  "Rectangle1.mk" clean

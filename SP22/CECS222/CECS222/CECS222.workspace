@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="CECS222" Database="" Version="10000">
-  <Project Name="ClassEmployee" Path="../memoriaDinimica/ClassEmployee/ClassEmployee.project" Active="Yes"/>
-  <Project Name="points" Path="points/points.project"/>
+  <Project Name="ClassEmployee" Path="../memoriaDinimica/ClassEmployee/ClassEmployee.project" Active="No"/>
+  <Project Name="points" Path="points/points.project" Active="No"/>
+  <Project Name="StudentScores" Path="StudentScores/StudentScores.project" Active="No"/>
+  <Project Name="StudentTestScores" Path="StudentTestScores/StudentTestScores.project" Active="No"/>
+  <Project Name="exceptionString" Path="exceptionString/exceptionString.project" Active="No"/>
+  <Project Name="Rectangle1" Path="Rectangle1/Rectangle1.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="ClassEmployee" ConfigName="Debug"/>
       <Project Name="points" ConfigName="Debug"/>
+      <Project Name="StudentScores" ConfigName="Debug"/>
+      <Project Name="StudentTestScores" ConfigName="Debug"/>
+      <Project Name="exceptionString" ConfigName="Debug"/>
+      <Project Name="Rectangle1" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="ClassEmployee" ConfigName="Release"/>
       <Project Name="points" ConfigName="Release"/>
+      <Project Name="StudentScores" ConfigName="Release"/>
+      <Project Name="StudentTestScores" ConfigName="Release"/>
+      <Project Name="exceptionString" ConfigName="Release"/>
+      <Project Name="Rectangle1" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

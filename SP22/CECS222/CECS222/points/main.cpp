@@ -12,15 +12,15 @@ int main(){
     
     cout << "Entre la cantidad de puntos para analizar el cuadrante (< 10): " << endl;
     cin >> n;
-    for (int i = 0; i <= n; i++){
+    for (int i = 0; i <= n; i++){`  
+        cout << "Enter the X point " << i + 1 << ": " << endl;
         aX = myArrayOfPoints[i]
+        cout << "Enter the Y point for: " << i + 1 << ": " << endl;
+        aY = myArrayOfPoints[i]
     }
     
     system("pause");
-    
     return 0;
-    
-}
 
-    
+}   
 

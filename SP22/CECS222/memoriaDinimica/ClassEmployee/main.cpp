@@ -12,7 +12,6 @@ int main(){
     
     cout << "Entre la cantidad de Empleados 1 - 10: ";
     cin >> n;
-    getDataEmployee
     
     return 0;
 }
