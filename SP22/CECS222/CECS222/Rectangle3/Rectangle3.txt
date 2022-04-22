@@ -1,0 +1,1 @@
+Debug/Rectangle3.cpp.o Debug/main.cpp.o
