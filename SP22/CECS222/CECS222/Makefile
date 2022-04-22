@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ Fracciones - Debug ]----------"
-	@cd "Fracciones" && "$(MAKE)" -f  "Fracciones.mk"
+	@echo "----------Building project:[ Date - Debug ]----------"
+	@cd "Date" && "$(MAKE)" -f  "Date.mk"
 clean:
-	@echo "----------Cleaning project:[ Fracciones - Debug ]----------"
-	@cd "Fracciones" && "$(MAKE)" -f  "Fracciones.mk" clean
+	@echo "----------Cleaning project:[ Date - Debug ]----------"
+	@cd "Date" && "$(MAKE)" -f  "Date.mk" clean
