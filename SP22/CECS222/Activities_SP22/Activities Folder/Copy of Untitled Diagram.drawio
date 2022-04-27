@@ -1,1 +1,37 @@
-<mxfile host="app.diagrams.net" modified="2022-04-27T15:04:02.035Z" agent="5.0 (Windows)" etag="zhbwcBGNubDqctEYDlQ_" version="17.4.0" type="github"><diagram id="YM1c8E568Pfl4trLo9x9" name="Page-1">7RnLcuI48Fv2QBV7SMoPcOAYHjNzSKaym8zO7FFgYWsiW5QsBpjDfvu27BZ+iIdDoOYyVVSFbnW3Wv3u0PHHyeajJMv4UYSUdzwn3HT8Scfz3J7ndfTHCbcF5q6PiEiyEIlKxDP7SRHpIHbFQprVCJUQXLFlHTkXaUrnqoYjUop1nWwheP3WJYmohXieE25jv7JQxQV20HdK/CfKotjc7Dp4khBDjIgsJqFYV1D+tOOPpRCq+JZsxpRr4xm7FHwfDpzuFJM0VW0YZjfR5y/sfpL84wxf/vrqzibq9Qal/CB8hQ9+YQlFhdXWWCFbs4STFKDRQqTqGU8cgOcx4+ED2YqV1iJTZP5qoFEsJPsJ9ITDkQsIOJYKnew7NYpnzYkyJc2A5sk8zW2gHsmmRvhAMmW0EZyTZcZmuX6aMSEyYulIKCUSJLItZ8xApaKbCgot+ZGKhCq5BRI89dGpGNVugPC6jJGeiYS4Eh++iQaCcRntRJeugy/ovTd40rM8eaPvFivZ8e81M7zVCzqev7kHE+izhKUrBb52DhFkFLIqPEBgxQhYTuUuluKVjgUXcPEkpAuy4hq/YJwbbCryUCKcRSmAnC40hbY+g8y7R3TCwlALH2VLMmdp9JCTTXol5m80rEYJYF/wPMFiYKQgYbQUoHNu6P4IPmD6sXPb7/RB3THAbgnDR5NLNRYpvICwPDIoBNaa6uAaSaGIIrNd2NsxdDS/TgfWth5YpwIpuFYc9aw46njwWkfXhS78derxMG6i/qzFiOb8L2e18UsJ5F9SBsbJCNcEuoqDtY20HwI03csFxSINiQzbMmVUFfrXFa8qjUBR/gKSLHNmW84nyKjuOYyPebp1z7k2wmvt1zZzEqnxrnb0YkklUZCYujYFkSo0wL9OF9IhQWb4SklS0VMbUcy+739G+bqFZDQvJLaEo7pw1IXbuoiDuuTH5tWnFLLFHFEIskEnhNNte80MJpV2TyxkGr73i42uIPaPyusvp2lhgPdLbtONsO/8bkWtWtGwZSva9ayL9yK3bzUj1/I0JPK9HvQBgsjSto5VYgZOOMRx0/XM/GmoQ0YSmG9eYpY2RlO3ZxAfGN+JCmExwGvBO7GIREr4tMSeCqIZzqDgwFUa0hDdRzdMfdN33DpOD+F/9dmt67sITzYV4sm2AjxRCQmiqDS4FAz/rQoUsoaebxClsBzaVqGmuIOjcgb9aE5PzxFgROhHx3x8VxBq87aZvE0cm3mpgCTlRMEkUd//9sQjyn0SeSc0QvtOfZ73Bo2QLp6LXNUlqyEoCE4IKuxhCcrTY/fYd2RMYC90hL9mbTc6txLGc/C5DgQrkJVYvmfxg6r9ixa/Q7vJBRbCYNBwvNuzq2dvX/UcXq163u1dCXVPAX+mUXNqq65+UDdtiqu22CKozu6vzaZ4wX7btr8GrWPGxEjQLkR6vWtFyGDPstfwMme59wovm3+BuReZol60yyc3ruV33/a7v8fHnMwofxIZU0xo+bKgbfj+l7n3bs/8tM+9g2t5d3holdcdAZZDndrWro5nmPn2GvusiurRJeZbrUpUVtqi7xzZiKd5kemSdGpXm9ZyoopKb9in8e62HG125N2OfXxNrr/nWkuykXp4T7YWrVN6nb8rt73KWuresTq3veKtu/OZco8uz2eY4+TX3836wtV80HKec70313MAy9+BilWg/DXNn/4P</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-04-27T20:33:29.052Z" agent="5.0 (Windows)" etag="3jgGWUFmD4twVkMh17xf" version="17.4.0" type="github">
+  <diagram id="YM1c8E568Pfl4trLo9x9" name="Page-1">
+    <mxGraphModel dx="1185" dy="627" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sA97WS96W59-GjIMj8yV-1" value="Time" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="190" width="400" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="sA97WS96W59-GjIMj8yV-2" value="- hour: int&#xa;- minute : int&#xa;- second : int&#xa;" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="sA97WS96W59-GjIMj8yV-1">
+          <mxGeometry y="30" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sA97WS96W59-GjIMj8yV-3" value="+ Time( 0 : int, 0 : int)&#xa;+ ~Time()&#xa;+ printUniversal() const : void&#xa;+ printStandard() const : void&#xa;+ setTime(: int, : int) : Time&amp;&#xa;+ setHour(: int) : Time&amp;&#xa;+ setMinute( : int) : Time&amp;&#xa;+ getHour() const : int&#xa;+ getMinute() const : int&#xa;+ operator &gt;&gt; (strm: istream&amp;, obj : Time&amp;) : friend istream&amp;&#xa;+ operator &lt;&lt; (strm: ostream&amp;, obj: const Time&amp;) : friend ostream&amp;&#xa;+ operator == (obj: const Time&amp;) : bool&#xa;+ operator &lt; (obj : const Time&amp;) : bool&#xa;+ operator &gt; (obj : const Time&amp;) : bool&#xa;+ operator != (obj : const Time&amp;) : bool&#xa;+ operator &lt;= (obj : const Time&amp;) : bool&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="sA97WS96W59-GjIMj8yV-1">
+          <mxGeometry y="90" width="400" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="sA97WS96W59-GjIMj8yV-4" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=1.004;exitY=0.131;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.923;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="sA97WS96W59-GjIMj8yV-3" target="sA97WS96W59-GjIMj8yV-6" parent="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="760" y="310" as="sourcePoint" />
+            <mxPoint x="920" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sA97WS96W59-GjIMj8yV-5" value="Talks" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="940" y="244" width="440" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="sA97WS96W59-GjIMj8yV-6" value="- strarting : Time&#xa;- ending : Time" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sA97WS96W59-GjIMj8yV-5">
+          <mxGeometry y="26" width="440" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sA97WS96W59-GjIMj8yV-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sA97WS96W59-GjIMj8yV-5">
+          <mxGeometry y="70" width="440" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sA97WS96W59-GjIMj8yV-8" value="+ Talks():&#xa;+ ~Talks() :&#xa;+ setStarting(aStarting : Time) : Talks&amp;&#xa;+ setEnding(anEnding : Time) : Talks&amp;&#xa;+ getStarting() : Time&amp;&#xa;+ getEnding() : Time&amp;&#xa;+ operator &gt;&gt; (strm : istream&amp;, obj :Talks&amp;) : friend istream&amp;&#xa;+ operator &lt;&lt; (strm : ostream&amp;, obj : const Talks&amp;) : friend ostream&amp;&#xa;+ operator == (obj : const Talks&amp;) : bool&#xa;&#xa;+ operator &lt; (obj : const Talks&amp;) : bool&#xa;+ operator &gt; (obj : const Talks&amp;) : bool&#xa;+ operator != (obj : const Talks&amp;) : bool&#xa;&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sA97WS96W59-GjIMj8yV-5">
+          <mxGeometry y="78" width="440" height="212" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
