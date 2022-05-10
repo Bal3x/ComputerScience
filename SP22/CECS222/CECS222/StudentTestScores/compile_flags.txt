@@ -1,3 +1,4 @@
+-I/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/StudentTestScores
 -I/usr/include/c++/9
 -I/usr/include/x86_64-linux-gnu/c++/9
 -I/usr/include/c++/9/backward
@@ -5,5 +6,6 @@
 -I/usr/local/include
 -I/usr/include/x86_64-linux-gnu
 -I/usr/include
--I/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/StudentTestScores
 -std=c++17
+-target
+x86_64-linux-gnu
