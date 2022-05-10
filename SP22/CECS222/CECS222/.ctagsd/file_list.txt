@@ -1,3 +1,8 @@
+/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/TeamLeader/Date.cpp
+/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/TeamLeader/Date.h
+/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/TeamLeader/Employee.cpp
+/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/TeamLeader/Employee.h
+/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/TeamLeader/main.cpp
 /home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/Fracciones/main.cpp
 /home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/Rectangle2/main.cpp
 /home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/Rectangle2/Rectangle2.h
@@ -18,6 +23,3 @@
 /home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/points/main.cpp
 /home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/points/Point.h
 /home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/points/Point.cpp
-/home/bal3x/clases/ComputerScience/SP22/CECS222/memoriaDinimica/ClassEmployee/main.cpp
-/home/bal3x/clases/ComputerScience/SP22/CECS222/memoriaDinimica/ClassEmployee/Employee.h
-/home/bal3x/clases/ComputerScience/SP22/CECS222/memoriaDinimica/ClassEmployee/Employee.cpp

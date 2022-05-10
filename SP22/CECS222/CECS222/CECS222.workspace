@@ -8,9 +8,10 @@
   <Project Name="Rectangle1" Path="Rectangle1/Rectangle1.project" Active="No"/>
   <Project Name="Rectangle2" Path="Rectangle2/Rectangle2.project" Active="No"/>
   <Project Name="Rectangle3" Path="Rectangle3/Rectangle3.project" Active="No"/>
-  <Project Name="Fracciones" Path="Fracciones/Fracciones.project" Active="Yes"/>
+  <Project Name="Fracciones" Path="Fracciones/Fracciones.project" Active="No"/>
+  <Project Name="TeamLeader" Path="TeamLeader/TeamLeader.project" Active="Yes"/>
   <BuildMatrix>
-    <WorkspaceConfiguration Name="Debug" Selected="yes">
+    <WorkspaceConfiguration Name="Debug">
       <Environment/>
       <Project Name="ClassEmployee" ConfigName="Debug"/>
       <Project Name="points" ConfigName="Debug"/>
@@ -21,8 +22,9 @@
       <Project Name="Rectangle2" ConfigName="Debug"/>
       <Project Name="Rectangle3" ConfigName="Debug"/>
       <Project Name="Fracciones" ConfigName="Debug"/>
+      <Project Name="TeamLeader" ConfigName="Debug"/>
     </WorkspaceConfiguration>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
+    <WorkspaceConfiguration Name="Release">
       <Environment/>
       <Project Name="ClassEmployee" ConfigName="Release"/>
       <Project Name="points" ConfigName="Release"/>
@@ -33,6 +35,7 @@
       <Project Name="Rectangle2" ConfigName="Release"/>
       <Project Name="Rectangle3" ConfigName="Release"/>
       <Project Name="Fracciones" ConfigName="Release"/>
+      <Project Name="TeamLeader" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
