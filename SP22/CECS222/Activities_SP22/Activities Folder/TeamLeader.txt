@@ -1,0 +1,111 @@
+Assg 9.1
+Employee.h***********************************************
+#pragma once
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Employee
+{
+private:
+	string name;
+	int employeeNumber;
+	int month, day, year;
+
+public:
+	//Constructors
+	//Dafault Constructor
+	Employee();
+	//Parameter Constructor
+	Employee(string aName, int anEmployeeNumber, int hMonth, int hDay, int hYear);
+	//Copy Constructor
+	Employee(const Employee& obj);
+
+	//Mutators
+	void setEmployee(string aName, int anEMployeeNumbers, int hMonth, int hDay, int hYear);
+	void setEmployeeName(string aName);
+	void setEmployeeNumber(int anEmployeeNumber);
+	void setEmployeeHireDate(int hMonth, int hDay, int hYear);
+
+	//Accessors
+	string getEmployeeName() const;
+	int getEmployeeNumber() const;
+	int getHireMonth() const;
+	int getHireDay() const;
+	int getHireYear() const;
+
+};
+
+Employee.cpp******************************************************
+#include "Employee.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+Employee::Employee()
+{
+	setEmployee(" ", 000, 0, 0, 0);
+}
+
+Employee::Employee(string aName, int anEmployeeNumber, int hMonth, int hDay, int hYear)
+{
+	setEmployee(aName, anEmployeeNumber, hMonth, hDay, hYear);
+}
+
+Employee::Employee(const Employee& obj)
+{
+	setEmployee(obj.name, obj.employeeNumber, obj.month, obj.day, obj.year);
+}
+
+void Employee::setEmployee(string aName, int anEMployeeNumbers, int hMonth, int hDay, int hYear)
+{
+	setEmployeeName(aName);
+	setEmployeeNumber(anEMployeeNumbers);
+	setEmployeeHireDate(hMonth, hDay, hYear);
+}
+
+void Employee::setEmployeeName(string aName)
+{
+	name = aName;
+}
+
+void Employee::setEmployeeNumber(int anEmployeeNumber)
+{
+	employeeNumber = anEmployeeNumber;
+}
+
+void Employee::setEmployeeHireDate(int hMonth, int hDay, int hYear)
+{
+	month = hMonth;
+	day = hDay;
+	year = hYear;
+}
+
+string Employee::getEmployeeName() const
+{
+	return name;
+}
+
+int Employee::getEmployeeNumber() const
+{
+	return employeeNumber;
+}
+
+int Employee::getHireMonth() const
+{
+	return month;
+}
+
+int Employee::getHireDay() const
+{
+	return day;
+}
+
+int Employee::getHireYear() const
+{
+	return year;
+}
+
+
+
