@@ -93,6 +93,10 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="TeamLeader.cpp"/>
+    <File Name="TeamLeader.h"/>
+    <File Name="ProductionWorker.cpp"/>
+    <File Name="ProductionWorker.h"/>
     <File Name="Date.cpp" ExcludeProjConfig="Debug;"/>
     <File Name="Date.h"/>
     <File Name="Employee.cpp"/>

@@ -1,18 +1,19 @@
 #include <iostream>
 #include <string>
+#include "ProductionWorker.h"
 #include "Employee.h"
+#include "TeamLeader.h"
 
 using namespace::std;
 
 int main(){
     
-    Employee myEmployee("Bryan", 123, 10, 25, 1990);
+    TeamLeader myEmployee;
     
-    myEmployee.display();
-    
+    cin >> myEmployee;
+    cout << myEmployee;
     
     return 0;
-    
 }
 
     

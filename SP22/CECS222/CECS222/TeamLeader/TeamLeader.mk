@@ -14,7 +14,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Bal3x
-Date                   :=09/05/22
+Date                   :=10/05/22
 CodeLitePath           :=/home/bal3x/.codelite
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -62,7 +62,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/Employee.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/TeamLeader.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Employee.cpp$(ObjectSuffix) $(IntermediateDirectory)/ProductionWorker.cpp$(ObjectSuffix) 
 
 
 
@@ -93,17 +93,29 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Employee.cpp$(ObjectSuffix): Employee.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Employee.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Employee.cpp$(DependSuffix) -MM Employee.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/TeamLeader/Employee.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Employee.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Employee.cpp$(PreprocessSuffix): Employee.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Employee.cpp$(PreprocessSuffix) Employee.cpp
+$(IntermediateDirectory)/TeamLeader.cpp$(ObjectSuffix): TeamLeader.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/TeamLeader.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/TeamLeader.cpp$(DependSuffix) -MM TeamLeader.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/TeamLeader/TeamLeader.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/TeamLeader.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/TeamLeader.cpp$(PreprocessSuffix): TeamLeader.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/TeamLeader.cpp$(PreprocessSuffix) TeamLeader.cpp
 
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/TeamLeader/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/Employee.cpp$(ObjectSuffix): Employee.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Employee.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Employee.cpp$(DependSuffix) -MM Employee.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/TeamLeader/Employee.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Employee.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Employee.cpp$(PreprocessSuffix): Employee.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Employee.cpp$(PreprocessSuffix) Employee.cpp
+
+$(IntermediateDirectory)/ProductionWorker.cpp$(ObjectSuffix): ProductionWorker.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ProductionWorker.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ProductionWorker.cpp$(DependSuffix) -MM ProductionWorker.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/ComputerScience/SP22/CECS222/CECS222/TeamLeader/ProductionWorker.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ProductionWorker.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/ProductionWorker.cpp$(PreprocessSuffix): ProductionWorker.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ProductionWorker.cpp$(PreprocessSuffix) ProductionWorker.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

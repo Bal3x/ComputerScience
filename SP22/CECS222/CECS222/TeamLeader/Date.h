@@ -1,5 +1,8 @@
 // Specification file for the Date class
 #pragma once
+#include <iostream>
+
+using namespace::std;
 
 class Date
 {
@@ -28,5 +31,20 @@ public:
 
    int getYear() const
       { return year; }
+      
+friend ostream& operator << (ostream& out, const Date& obj){
+    out << obj.getMonth() << "/" << obj.getDay() << "/" << obj.getYear();
+    return out;
+}
+friend istream& operator >> (istream& in, Date& obj){
+    cout << "Enter month: " << endl;
+    in >> obj.month;
+    cout << "Enter day: " << endl;
+    in >> obj.day;
+    cout << "Enter Year: " << endl;
+    in >> obj.year;
+    
+    return in;
+}
 };
 
