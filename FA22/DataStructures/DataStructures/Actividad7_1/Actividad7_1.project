@@ -93,6 +93,9 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="PrecondViolatedExcep.h"/>
+    <File Name="ArrayMaxHeap.h"/>
+    <File Name="HeapInterface.h"/>
     <File Name="main.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

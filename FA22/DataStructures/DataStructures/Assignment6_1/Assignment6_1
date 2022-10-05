@@ -1,0 +1,319 @@
+#include<iostream>
+#include<string>
+#include "StackInterface.h"
+#include "LinkedStack.h"
+#include "Node.h"
+
+//Prototype
+std::string infix_to_postfix(std::string& infix);
+int precedence(char ch);
+
+int main()
+{
+    /**********************************************/
+    std::string exp = "a-(b+c*d)/e";
+    std::cout << "Infix expression: " << exp << "\n\n";
+    std::string postFix;
+    std::cout << "Postfix expression: " <<  infix_to_postfix(exp) << "\n\n";
+    
+    return 0; 
+    
+}//end main
+
+std::string infix_to_postfix(std::string& infix)
+{
+    LinkedStack<char> operatorStack;
+    std::string postfixExp;
+    int len = infix.size();
+    
+    for(int i = 0; i < len; i++)
+    {
+        char ch = infix[i];
+        switch(ch)
+        {    
+            case 'a':   //append operand to end of postfix expression - step 1
+            case 'b':
+            case 'c':
+            case 'd':
+            case 'e':
+                postfixExp += ch;            
+            break;
+            
+            case '(':       //Save '(' on stack - step 2
+                operatorStack.push(ch);
+            break;
+            
+            case '+':  //Process stack operators of greater precedence - step 3
+            case '-':
+            case '/':
+            case '*':
+                while(!operatorStack.isEmpty() && operatorStack.peek() != '(' &&   
+                precedence(ch) <= precedence(operatorStack.peek()))
+                {
+                    postfixExp += operatorStack.peek();
+                    operatorStack.pop();
+                }//end while
+                operatorStack.push(ch);     //save the operator
+            break;
+            case ')':   //pop stack until matching '('  - step4
+                while(operatorStack.peek() != '(')
+                {
+                    postfixExp += operatorStack.peek();
+                    operatorStack.pop();
+                }//end while
+                operatorStack.pop();    //remove the open parenthesis
+            break;
+        }//end switch
+    }//end for
+    //Append to postfixExp the operators remaining in the stack - step5
+    while(!operatorStack.isEmpty())
+    {
+        postfixExp += operatorStack.peek();
+        operatorStack.pop();
+    }//end while
+    
+    return postfixExp;
+}//end infix_to_postfix
+    
+                    
+int precedence(char ch)
+{
+    if (ch == '/' || ch == '*')
+        return 2;
+    else if (ch == '+' || ch == '-')
+        return 1;
+    else
+        return -1;
+}//end precedence
+
+
+#ifndef _LINKED_STACK
+#define _LINKED_STACK
+
+#include "StackInterface.h"
+#include "Node.h"
+
+template<class ItemType>
+class LinkedStack : public StackInterface<ItemType>
+{
+private:
+	Node<ItemType>* topPtr; // Pointer to first node in the chain;
+                           // this node contains the stack's top
+
+public:
+// Constructors and destructor:
+	LinkedStack();                                   // Default constructor
+    LinkedStack(const LinkedStack<ItemType>& aStack);// Copy constructor 
+	virtual ~LinkedStack();                          // Destructor
+	
+// Stack operations:
+	bool isEmpty() const;
+	bool push(const ItemType& newItem);
+	bool pop();
+	ItemType peek() const;
+}; // end LinkedStack
+
+
+template<class ItemType>
+LinkedStack<ItemType>::LinkedStack() : topPtr(nullptr)
+{
+}  // end default constructor
+
+template<class ItemType>
+LinkedStack<ItemType>::LinkedStack(const LinkedStack<ItemType>& aStack)
+{
+   // Point to nodes in original chain
+   Node<ItemType>* origChainPtr = aStack.topPtr;
+   
+   if (origChainPtr == nullptr)
+      topPtr = nullptr;  // Original stack is empty
+   else
+   {
+      // Copy first node
+      topPtr = new Node<ItemType>();
+      topPtr->setItem(origChainPtr->getItem());
+      
+      // Point to last node in new chain
+      Node<ItemType>* newChainPtr = topPtr;
+      
+      // Advance original-chain pointer
+      origChainPtr = origChainPtr->getNext();
+      
+      // Copy remaining nodes
+      while (origChainPtr != nullptr)
+      {
+         // Get next item from original chain
+         ItemType nextItem = origChainPtr->getItem();
+         
+         // Create a new node containing the next item
+         Node<ItemType>* newNodePtr = new Node<ItemType>(nextItem);
+         
+         // Link new node to end of new chain
+         newChainPtr->setNext(newNodePtr);
+         
+         // Advance pointer to new last node
+         newChainPtr = newChainPtr->getNext();
+         
+         // Advance original-chain pointer
+         origChainPtr = origChainPtr->getNext();
+      }  // end while
+      
+      newChainPtr->setNext(nullptr);           // Flag end of chain
+   }  // end if
+}  // end copy constructor
+
+template<class ItemType>
+LinkedStack<ItemType>::~LinkedStack()
+{
+	// Pop until stack is empty
+	while (!isEmpty())
+		pop();
+}  // end destructor
+
+template<class ItemType>
+bool LinkedStack<ItemType>::isEmpty() const
+{
+	return topPtr == nullptr;
+}  // end isEmpty
+
+template<class ItemType>
+bool LinkedStack<ItemType>::push(const ItemType& newItem)
+{
+	Node<ItemType>* newNodePtr = new Node<ItemType>(newItem, topPtr);				
+	topPtr = newNodePtr;
+    newNodePtr = nullptr;
+      
+	return true;
+}  // end push
+
+template<class ItemType>
+bool LinkedStack<ItemType>::pop()
+{
+	bool result = false;
+	if (!isEmpty())
+	{
+      // Stack is not empty; delete top
+		Node<ItemType>* nodeToDeletePtr = topPtr;
+		topPtr = topPtr->getNext();
+		
+		// Return deleted node to system
+      nodeToDeletePtr->setNext(nullptr);
+		delete nodeToDeletePtr;
+      nodeToDeletePtr = nullptr;
+            
+      result = true;
+	}  // end if
+   
+	return result;	
+}  // end pop
+
+template<class ItemType>	
+ItemType LinkedStack<ItemType>::peek() const
+{
+//	assert(!isEmpty());  // Enforce precondition
+   
+	// Stack is not empty; return top
+	return topPtr->getItem();
+}  // end getTop
+// End of implementation file.
+
+#endif
+
+#ifndef _NODE
+#define _NODE
+
+template<class ItemType>
+class Node
+{
+private:
+   ItemType        item; // A data item
+   Node<ItemType>* next; // Pointer to next node
+   
+public:
+   Node();
+   Node(const ItemType& anItem);
+   Node(const ItemType& anItem, Node<ItemType>* nextNodePtr);
+   void setItem(const ItemType& anItem);
+   void setNext(Node<ItemType>* nextNodePtr);
+   ItemType getItem() const ;
+   Node<ItemType>* getNext() const ;
+}; // end Node
+
+//Implementation
+
+template<class ItemType>
+Node<ItemType>::Node() : next(nullptr)
+{
+} // end default constructor
+
+template<class ItemType>
+Node<ItemType>::Node(const ItemType& anItem) : item(anItem), next(nullptr)
+{
+} // end constructor
+
+template<class ItemType>
+Node<ItemType>::Node(const ItemType& anItem, Node<ItemType>* nextNodePtr) :
+                item(anItem), next(nextNodePtr)
+{
+} // end constructor
+
+template<class ItemType>
+void Node<ItemType>::setItem(const ItemType& anItem)
+{
+   item = anItem;
+} // end setItem
+
+template<class ItemType>
+void Node<ItemType>::setNext(Node<ItemType>* nextNodePtr)
+{
+   next = nextNodePtr;
+} // end setNext
+
+template<class ItemType>
+ItemType Node<ItemType>::getItem() const
+{
+   return item;
+} // end getItem
+
+template<class ItemType>
+Node<ItemType>* Node<ItemType>::getNext() const
+{
+   return next;
+} // end getNext
+
+#endif
+
+
+#ifndef _STACK_INTERFACE
+#define _STACK_INTERFACE
+
+template<class ItemType>
+class StackInterface
+{
+public:
+   /** Sees whether this stack is empty.
+    @return True if the stack is empty, or false if not. */
+   virtual bool isEmpty() const = 0;
+   
+   /** Adds a new entry to the top of this stack.
+    @post If the operation was successful, newEntry is at the top of the stack.
+    @param newEntry The object to be added as a new entry.
+    @return True if the addition is successful or false if not. */
+   virtual bool push(const ItemType& newEntry) = 0;
+   
+   /** Removes the top of this stack.
+    @post If the operation was successful, the top of the stack
+    has been removed.
+    @return True if the removal is successful or false if not. */
+   virtual bool pop() = 0;
+   
+   /** Returns the top of this stack.
+    @pre The stack is not empty.
+    @post The top of the stack has been returned, and
+    the stack is unchanged.
+    @return The top of the stack. */
+   virtual ItemType peek() const = 0;
+}; // end StackInterface
+#endif
+
+
