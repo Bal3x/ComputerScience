@@ -1,4 +1,9 @@
-/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad7_1/PrecondViolatedExcep.h
-/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad7_1/ArrayMaxHeap.h
-/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad7_1/HeapInterface.h
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_2/main.cpp
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_2/ArrayList.h
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_2/PrecondViolatedExcep.h
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_2/ListInterface.h
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_2/PrecondViolatedExcep.cpp
 /home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad7_1/main.cpp
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad7_1/HeapInterface.h
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad7_1/ArrayMaxHeap.h
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad7_1/PrecondViolatedExcep.h
