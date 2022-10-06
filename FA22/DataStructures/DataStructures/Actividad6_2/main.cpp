@@ -13,7 +13,7 @@ int main()
 {
    ListInterface<std::string>* listPtr = new ArrayList<std::string>();
    
-   string data[] = {"one", "two", "three", "four", "five", "six"};
+   std::string data[] = {"one", "two", "three", "four", "five", "six", "seven"};
    
    cout << "isEmpty: returns " << listPtr->isEmpty()
    << "; should be 1 (true)" << endl;
@@ -27,8 +27,12 @@ int main()
          cout << "Cannot insert " << data[i] << " at position " << (i + 1)
          << endl;
    }  // end for
-   bool status = swapReverse(listPtr);
-   std::cout << status << endl;
+   std::cout << swapReverse(listPtr) << endl;
+   
+   for(int i = 0; i < 6; i++)
+   {
+       std::cout << listPtr->getEntry(i) << "\n";
+   }//end for
    
    return 0;
 }  // end main
@@ -40,14 +44,20 @@ bool swapReverse(ListInterface<std::string>* aList)
     //get length of array
     int length = aList->getLength();
     std::cout<< length << "\n";
-    //Iterate the until all array is swapped in reverse order
-//    for(int i = 0; i < length; i++)
-//    {
-//        
-//        std::string dataA = aList.getEntry(i);
-//        std::string dataB = aList.getEntry();
-//        
-//    }
+    
+    //swap the items in the list
+    for(int i = 0; i < length; i++)
+    {
+        for(int j = 0; j > length; j--)
+        {
+            std::string aTemp = aList->getEntry(i);
+            std::string bTemp = aList->getEntry(j);
+            aList->remove(i);
+            aList->insert(i, bTemp);
+            aList->remove(j);
+            aList->insert(j, aTemp);
+        }//end for
+    }//end for
     
     return swapStatus;
-}
+}//end swapReverse

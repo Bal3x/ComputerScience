@@ -15,7 +15,7 @@ template<class ItemType>
 class ArrayList : public ListInterface<ItemType>
 {
 private:
-    static const int DEFAULT_CAPACITY = 5; // Small capacity to test for a full list 
+    static const int DEFAULT_CAPACITY = 10; // Small capacity to test for a full list 
     ItemType items[DEFAULT_CAPACITY];      // Array of list items
     int itemCount;                         // Current count of list items 
     int maxItems;                          // Maximum capacity of the list
@@ -123,7 +123,7 @@ ItemType ArrayList<ItemType>::getEntry(int position) const
    {
       string message = "getEntry() called with an empty list or "; 
       message  = message + "invalid position.";
-      throw(PrecondViolatedExcep(message)); 
+//      throw(PrecondViolatedExcep(message)); 
    }  // end if
 }  // end getEntry
 
@@ -139,7 +139,7 @@ void ArrayList<ItemType>::setEntry(int position, const ItemType& newEntry)
    {
       string message = "setEntry() called with an empty list or "; 
       message  = message + "invalid position.";
-      throw(PrecondViolatedExcep(message)); 
+//      throw(PrecondViolatedExcep(message)); 
    }  // end if
 }  // end setEntry
 
