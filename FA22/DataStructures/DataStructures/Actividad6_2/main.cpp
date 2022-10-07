@@ -27,11 +27,12 @@ int main()
          cout << "Cannot insert " << data[i] << " at position " << (i + 1)
          << endl;
    }  // end for
-   std::cout << swapReverse(listPtr) << endl;
+
+   std::cout << "swapReverse successful? : " << swapReverse(listPtr) << endl;
    
    for(int i = 0; i < 6; i++)
    {
-       std::cout << listPtr->getEntry(i) << "\n";
+       std::cout << listPtr->getEntry(i + 1) << "\n";
    }//end for
    
    return 0;
@@ -43,20 +44,21 @@ bool swapReverse(ListInterface<std::string>* aList)
     bool swapStatus = false;
     //get length of array
     int length = aList->getLength();
-    std::cout<< length << "\n";
+//    std::cout<< length << "\n";
     
     //swap the items in the list
-    for(int i = 0; i < length; i++)
+    for(int i = 0; i < length/2; i++)
     {
-        for(int j = 0; j > length; j--)
+        for(int j = length - 1; j < length/2; j--)
         {
+            swapStatus = true;
             std::string aTemp = aList->getEntry(i);
             std::string bTemp = aList->getEntry(j);
             aList->remove(i);
             aList->insert(i, bTemp);
             aList->remove(j);
             aList->insert(j, aTemp);
-        }//end for
+        }
     }//end for
     
     return swapStatus;

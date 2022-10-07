@@ -1,3 +1,9 @@
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_3/LinkedList.h
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_3/PrecondViolateExcep.h
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_3/PrecondViolateExcep.cpp
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_3/Node.h
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_3/ListInterface.h
+/home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_3/main.cpp
 /home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_2/main.cpp
 /home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_2/ArrayList.h
 /home/bal3x/clases/ComputerScience/FA22/DataStructures/DataStructures/Actividad6_2/PrecondViolatedExcep.h

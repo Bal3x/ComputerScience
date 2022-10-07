@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="DataStructures" Database="" Version="10000">
   <Project Name="Actividad7_1" Path="Actividad7_1/Actividad7_1.project" Active="No"/>
-  <Project Name="Actividad6_2" Path="Actividad6_2/Actividad6_2.project" Active="Yes"/>
+  <Project Name="Actividad6_2" Path="Actividad6_2/Actividad6_2.project" Active="No"/>
+  <Project Name="Actividad6_3" Path="Actividad6_3/Actividad6_3.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
       <Project Name="Actividad7_1" ConfigName="Debug"/>
       <Project Name="Actividad6_2" ConfigName="Debug"/>
+      <Project Name="Actividad6_3" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
       <Project Name="Actividad7_1" ConfigName="Release"/>
       <Project Name="Actividad6_2" ConfigName="Release"/>
+      <Project Name="Actividad6_3" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
