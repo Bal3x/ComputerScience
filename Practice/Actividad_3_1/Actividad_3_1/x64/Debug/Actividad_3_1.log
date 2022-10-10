@@ -1,0 +1,20 @@
+﻿  main.cpp
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(235,1): error C2955: 'std::vector': use of class template requires template argument list
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(496): message : see declaration of 'std::vector'
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(232): message : while compiling class template member function 'ArrayBag<std::string> ArrayBag<std::string>::bagIntersection(ArrayBag<std::string> &)'
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\main.cpp(57): message : see reference to function template instantiation 'ArrayBag<std::string> ArrayBag<std::string>::bagIntersection(ArrayBag<std::string> &)' being compiled
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\main.cpp(9): message : see reference to class template instantiation 'ArrayBag<std::string>' being compiled
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(235,1): error C2514: 'std::vector': class template cannot be constructed
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(496): message : see declaration of 'std::vector'
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(236,1): error C2514: 'std::vector': class template cannot be constructed
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(496): message : see declaration of 'std::vector'
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(240,1): error C2663: 'std::vector<_Ty,_Alloc>::at': 2 overloads have no legal conversion for 'this' pointer
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(241,1): error C2663: 'std::vector<_Ty,_Alloc>::at': 2 overloads have no legal conversion for 'this' pointer
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(252,1): error C2514: 'std::vector': class template cannot be constructed
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(496): message : see declaration of 'std::vector'
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(249): message : while compiling class template member function 'ArrayBag<std::string> ArrayBag<std::string>::bagDifference(ArrayBag<std::string> &)'
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\main.cpp(61): message : see reference to function template instantiation 'ArrayBag<std::string> ArrayBag<std::string>::bagDifference(ArrayBag<std::string> &)' being compiled
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(253,1): error C2514: 'std::vector': class template cannot be constructed
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\vector(496): message : see declaration of 'std::vector'
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(256,1): error C2663: 'std::vector<_Ty,_Alloc>::at': 2 overloads have no legal conversion for 'this' pointer
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad_3_1\Actividad_3_1\ArrayBag.h(257,1): error C2663: 'std::vector<_Ty,_Alloc>::at': 2 overloads have no legal conversion for 'this' pointer
