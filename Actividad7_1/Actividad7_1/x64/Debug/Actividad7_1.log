@@ -1,0 +1,10 @@
+﻿  main.cpp
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad7_1\Actividad7_1\ArrayMaxHeap.h(59,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad7_1\Actividad7_1\ArrayMaxHeap.h(64): message : see reference to class template instantiation 'ArrayMaxHeap<ItemType>' being compiled
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad7_1\Actividad7_1\ArrayMaxHeap.h(164,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad7_1\Actividad7_1\ArrayMaxHeap.h(189,13): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad7_1\Actividad7_1\ArrayMaxHeap.h(186): message : while compiling class template member function 'int ArrayMaxHeap<int>::getHeight(void) const'
+C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad7_1\Actividad7_1\main.cpp(8): message : see reference to class template instantiation 'ArrayMaxHeap<int>' being compiled
+  PrecondViolatedExcep.cpp
+  Generating Code...
+  Actividad7_1.vcxproj -> C:\Users\bchav\OneDrive\Desktop\C++\Practice\Actividad7_1\x64\Debug\Actividad7_1.exe
