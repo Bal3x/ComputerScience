@@ -1,0 +1,19 @@
+﻿  main.cpp
+C:\Users\bchav\Desktop\ComputerScience\ComputerScience\Data Structures\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\ArrayList.h(36,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\bchav\Desktop\ComputerScience\ComputerScience\Data Structures\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\ArrayList.h(42): message : see reference to class template instantiation 'ArrayList<ItemType>' being compiled
+C:\Users\bchav\Desktop\ComputerScience\ComputerScience\Data Structures\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\ArrayList.h(41,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\bchav\Desktop\ComputerScience\ComputerScience\Data Structures\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\ArrayList.h(112,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\bchav\Desktop\ComputerScience\ComputerScience\Data Structures\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\ArrayList.h(127,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\bchav\Desktop\ComputerScience\ComputerScience\Data Structures\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\ArrayList.h(66,30): warning C4390: ';': empty controlled statement found; is this the intent?
+C:\Users\bchav\Desktop\ComputerScience\ComputerScience\Data Structures\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\ArrayList.h(64): message : while compiling class template member function 'bool ArrayList<int>::insert(int,const ItemType &)'
+          with
+          [
+              ItemType=int
+          ]
+C:\Users\bchav\Desktop\ComputerScience\ComputerScience\Data Structures\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\main.cpp(20): message : see reference to function template instantiation 'bool ArrayList<int>::insert(int,const ItemType &)' being compiled
+          with
+          [
+              ItemType=int
+          ]
+C:\Users\bchav\Desktop\ComputerScience\ComputerScience\Data Structures\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\main.cpp(12): message : see reference to class template instantiation 'ArrayList<int>' being compiled
+  Actividad_6_2_ArrayList_2.vcxproj -> C:\Users\bchav\Desktop\ComputerScience\ComputerScience\Data Structures\Actividad_6_2_ArrayList_2\Actividad_6_2_ArrayList_2\x64\Debug\Actividad_6_2_ArrayList_2.exe
